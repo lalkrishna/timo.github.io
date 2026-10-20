@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Timo — Days Counter &amp; Reminder</title>
+  <meta name="description" content="Timo counts the days for you. Count down to a trip, a birthday or a renewal, count up from the day something started, and get reminded in time. No account, and your events stay on your phone.">
+  <meta name="theme-color" content="#FEFCF7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F1F1C" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Timo — Days Counter & Reminder">
+  <meta property="og:description" content="Count down to big days, count up from milestones, and get reminded in time.">
+  <meta property="og:image" content="https://lalkrishna.github.io/timo.github.io/assets/img/timo-share.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="assets/img/timo-icon.png" alt="" width="36" height="36">Timo</a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="#features">Features</a>
+        <a href="privacy/">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <h1>Timo counts the days for you.</h1>
+          <p class="lede">Count down to a trip, a birthday or a renewal. Count up from the day something started. Get a reminder before it matters.</p>
+          <!-- When the Play Store listing is public: change this to <a class="store" href="https://play.google.com/store/apps/details?id=app.philtre.timo"> and the text to "Get it on Google Play". -->
+          <span class="store" aria-disabled="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.2 2.3a1.5 1.5 0 0 0-.7 1.3v16.8c0 .6.3 1 .7 1.3l9.6-9.7-9.6-9.7Zm10.7 8.6 2.7-2.7L6.3 1.8l8.6 9.1Zm0 2.2-8.6 9.1 11.3-6.4-2.7-2.7Zm3.8-4 2.9 1.7c1 .6 1 1.8 0 2.4l-2.9 1.7-3-2.9 3-2.9Z"/></svg>
+            Coming soon to Google Play
+          </span>
+          <p class="store-note">For Android 10 and newer. Free, with no account.</p>
+        </div>
+
+        <div class="homescreen" aria-label="Timo widgets on an Android home screen">
+          <img class="mascot" src="assets/img/timo-hello.png" alt="Timo the turtle waving" width="217" height="201">
+          <div class="grid">
+            <div class="widget lagoon" data-in-days="12">
+              <span class="w-title">Goa trip</span>
+              <span class="w-num" data-num>12</span>
+              <span class="w-unit" data-unit>days</span>
+            </div>
+            <div class="widget dusk" data-since="2024-03-04">
+              <span class="w-title">At my new job</span>
+              <span class="w-num" data-num>960</span>
+              <span class="w-unit" data-unit>days ago</span>
+            </div>
+            <div class="widget wide ember" data-next="01-01">
+              <span class="w-num" data-num>73</span>
+              <span class="w-text">
+                <span class="w-title">New Year’s Day</span>
+                <span class="w-unit" data-unit>days</span>
+              </span>
+            </div>
+          </div>
+          <div class="dock" aria-hidden="true">
+            <span class="app"><span class="blank"></span></span>
+            <span class="app"><img src="assets/img/timo-icon.png" alt="" width="52" height="52">Timo</span>
+            <span class="app"><span class="blank"></span></span>
+            <span class="app"><span class="blank"></span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="wrap">
+        <h2>Built around one number: how many days.</h2>
+        <p class="intro">Everything in Timo exists to get that number right, keep it in front of you, and nudge you before the day arrives.</p>
+
+        <div class="features">
+          <div class="feature">
+            <div>
+              <h3>Add an event with just a name</h3>
+              <p>Type a name and save. That’s all Timo needs. Add a date, a time, a reminder or a photo now or later.</p>
+              <p>Type the date into the name, like “Goa trip 19 Dec”, and Timo sets it for you.</p>
+            </div>
+            <div class="quickadd" aria-hidden="true">
+              <div class="qa-field">Goa trip <mark>19 Dec</mark></div>
+              <span class="qa-chip">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h2v2h6V2h2v2h2a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2V2Zm12 8H5v9h14v-9Z"/></svg>
+                Sat, 19 Dec
+              </span>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div>
+              <h3>Counts down, then counts up</h3>
+              <p>Every event counts down until its day arrives, then keeps counting up afterwards. On the day of a timed event, Timo counts down in hours, then minutes.</p>
+            </div>
+            <ol class="flip" aria-label="One event over time">
+              <li><span class="when">Before</span><span class="count">In 12 days</span></li>
+              <li class="today"><span class="when">On the day</span><span class="count">Today</span></li>
+              <li><span class="when">After</span><span class="count">3 days ago</span></li>
+            </ol>
+          </div>
+
+          <div class="feature">
+            <div>
+              <h3>Reminders you can trust</h3>
+              <ul>
+                <li>On the day, 1, 3 or 7 days before, or on a day and time you choose.</li>
+                <li>See exactly when each reminder will arrive before you save it.</li>
+                <li>Reminders stay correct after a restart, a time zone change or a clock change.</li>
+              </ul>
+            </div>
+            <ul class="reminders" aria-label="Example reminder options for an event on Friday 16 October">
+              <li><span>On the day</span><span>Fri, 16 Oct, 9:00 AM</span></li>
+              <li class="on"><span>1 day before</span><span>Thu, 15 Oct, 9:00 AM</span></li>
+              <li><span>3 days before</span><span>Tue, 13 Oct, 9:00 AM</span></li>
+              <li><span>7 days before</span><span>Fri, 9 Oct, 9:00 AM</span></li>
+            </ul>
+          </div>
+
+          <div class="feature">
+            <div>
+              <h3>Make each event yours</h3>
+              <p>Add a photo from your gallery or camera, or pick one of 8 gradients. Until you choose, Timo gives each event a gradient based on its name.</p>
+              <p>Pin any event to your home screen with the widget, in three sizes. It updates on its own at midnight.</p>
+            </div>
+            <ul class="swatches" aria-label="The 8 gradients">
+              <li class="lagoon">lagoon</li>
+              <li class="dusk">dusk</li>
+              <li class="ember">ember</li>
+              <li class="plum">plum</li>
+              <li class="ocean">ocean</li>
+              <li class="forest">forest</li>
+              <li class="slate">slate</li>
+              <li class="moss">moss</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section privacy-band" id="privacy">
+      <div class="wrap">
+        <div>
+          <h2>Your dates stay on your phone.</h2>
+          <p class="intro">Timo has no account, no ads and no tracking. It doesn’t have permission to use the internet, so your events can’t leave your phone.</p>
+          <p class="more"><a href="privacy/">Read the privacy policy</a></p>
+        </div>
+        <ul>
+          <li><strong>No sign-up.</strong> Open the app and start counting.</li>
+          <li><strong>Nothing collected.</strong> No analytics, no crash-reporting tools, no advertising ID.</li>
+          <li><strong>Photos without location.</strong> Timo saves a resized copy of your photo with its location and camera details removed.</li>
+          <li><strong>Not in cloud backup.</strong> This first version keeps everything on this phone only, so uninstalling the app removes your events.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© <span data-year>2026</span> Timo</span>
+      <nav aria-label="Footer">
+        <a href="privacy/">Privacy policy</a>
+        <a href="mailto:806lalkrishna@gmail.com?subject=Timo">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var DAY = 86400000;
+      var WD = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+      var MO = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      function startOfDay(d) { return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
+      function diffDays(a, b) { return Math.round((startOfDay(b) - startOfDay(a)) / DAY); }
+      function label(d) { return WD[d.getDay()] + ", " + d.getDate() + " " + MO[d.getMonth()]; }
+      function set(el, n, unit) {
+        el.querySelector("[data-num]").textContent = n;
+        el.querySelector("[data-unit]").textContent = unit;
+      }
+      var today = startOfDay(new Date());
+
+      document.querySelectorAll("[data-in-days]").forEach(function (el) {
+        var n = +el.dataset.inDays;
+        var d = new Date(today.getFullYear(), today.getMonth(), today.getDate() + n);
+        set(el, n, (n === 1 ? "day" : "days") + " · " + label(d));
+      });
+      document.querySelectorAll("[data-since]").forEach(function (el) {
+        var p = el.dataset.since.split("-");
+        var d = new Date(+p[0], +p[1] - 1, +p[2]);
+        var n = diffDays(d, today);
+        set(el, n, (n === 1 ? "day" : "days") + " ago");
+      });
+      document.querySelectorAll("[data-next]").forEach(function (el) {
+        var p = el.dataset.next.split("-");
+        var d = new Date(today.getFullYear(), +p[0] - 1, +p[1]);
+        if (d < today) d = new Date(today.getFullYear() + 1, +p[0] - 1, +p[1]);
+        var n = diffDays(today, d);
+        if (n === 0) set(el, "Today", label(d));
+        else set(el, n, (n === 1 ? "day" : "days") + " · " + label(d));
+      });
+      document.querySelectorAll("[data-year]").forEach(function (el) { el.textContent = today.getFullYear(); });
+    })();
+  </script>
+</body>
+</html>
